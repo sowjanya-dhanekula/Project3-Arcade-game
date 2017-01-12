@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="js/jquery-2.1.3.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    
+</head>
+<body>
+   
+    <script src="js/engine.js"></script>
+   
+
+    <div class="Instructions"> 
+		<h1>Frogger Game</h1>
+		<br>
+		<button type="button" class="btn" id="play">Play</button>
+		<br>
+		<button type="button" class="btn" data-toggle = "modal" data-target="#instruction">Instructions</button>
+		<br>
+		<button type="button" class="btn" id="exit">Exit</button>
+	</div>
+	<div id="game-over">
+		<a href="javascript:void(0)" class="button lost">Bugged! You lost</a>
+	</div>
+	<div id="game-won">
+		<a href="javascript:void(0)" class="button won">Congrats, You won the game!!!!</a>
+	</div>
+
+
+	<!--Modal-->
+<div class="modal fade" id="instruction" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="myModalLabel1">How to Play</h3>          
+        </div>
+
+        <div class="modal-body">
+        	<li>Player should reach the <span class="water">WATER</span></li>
+			<br>
+			<li>Beware of the enemy <span class="bugs">BUGS</span>.</li>
+			<br>
+			<li>The player can move left, right, up and down.</li>
+			<br>
+			<li>Collect all <span class="stars">STARS</span> along the way to <span class="win">Win</span>!!</li> 
+			<br>
+			<li>If player's score greater than 100 then level 1 completed!!!</li> 
+			<br>
+			<li>If player's score greater then 200 then won the game!!!</li>              
+          
+          </div>
+
+        <div class="modal-footer">
+          <button type="button" class="footer" data-dismiss="modal">Close</button>
+                    
+        </div>
+                 
+      </div><!-- /.modal-content-->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+</dialog>
+
+   <div id="dialog" title="Next Level">
+  <p id="dialText">Congratulations, You reached the next Level!!</p>
+</div>     
+        
+</body>
+</html>
